@@ -1,0 +1,33 @@
+Importa hashlib para utilizar métodos de criptografia, especificamente o sha256
+
+
+Cria uma função que recebe qualquer tipo de argumento (*args), e transforma em um hash de 64 letras.
+
+
+Cria a classe block:
+	cria a função _init_ (construtora), que tem os argumentos: self, antigo hash (sendo 0),
+	pois é o primeiro bloco), data (transações) e nonce (prova de validade).
+
+
+	Cria a função hash que pega o bloco e transforma em um hash com a função updatehash
+
+
+	Cria uma função _str_, que transforma todos os dados do bloco em uma string. Muito útil
+	para captura de tela diagnostic statements cria a classe blockchain:
+
+
+	Cria a função construtora, que cria uma rede de blocos, que recebe o argumento self. E dentro da função cria
+	a variável chamada chain que é um array vazio. Onde vai ser colocado os blocos. Esta função é a que linka
+	todos os blocos juntos.
+
+	Função add, tem como argumento o self e block. Ela adiciona (append) um bloco a rede de blocos (chain)
+
+
+	Função remove, tem como argumento o self e block. Ela remove um bloco da rede de blocos (chain)
+
+
+	Função isValid, tem como argumento o self. Cria um loop para verificar se o último bloco instanciado é igual
+	ao bloco anterior que vai ser instanciado. Retorna false ou true.
+
+
+	Função main, não tem argumentos. Testa para ver se o blockchain está funcionando.
