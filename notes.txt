@@ -13,9 +13,9 @@ Cria a classe block:
 
 
 	Cria uma função _str_, que transforma todos os dados do bloco em uma string. Muito útil
-	para captura de tela diagnostic statements cria a classe blockchain:
+	para captura de tela diagnostic statements
 
-
+Cria a classe blockchain:
 	Cria a função construtora, que cria uma rede de blocos, que recebe o argumento self. E dentro da função cria
 	a variável chamada chain que é um array vazio. Onde vai ser colocado os blocos. Esta função é a que linka
 	todos os blocos juntos.
